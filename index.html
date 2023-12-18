@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Typed.js -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <title>Entrümpelung-Billig</title>
+    <style>
+        /* Navbar Style */
+        .navbar-brand.mx-auto {
+            font-size: 1.5rem;
+            color: #fff; /* Weißer Text für bessere Lesbarkeit auf der dunklen Navbar */
+        }
+
+        /* Card Style */
+        .card {
+            margin-bottom: 20px;
+        }
+
+        /* Card Title Style */
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+
+        /* Card Text Style */
+        .card-text {
+            font-size: 1rem;
+        }
+
+        /* Form Style */
+        form {
+            margin-top: 20px;
+        }
+
+        /* Footer Style */
+        footer {
+            margin-top: 40px;
+            text-align: center;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <a class="navbar-brand mx-auto" href="#">
+        <img src="logo.webp" width="200" height="200" class="d-inline-block align-top" alt="Logo">
+    </a>
+</nav>
+
+<div class="container mt-4">
+    <div class="row">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="bild1.webp" class="card-img-top" alt="Bild 1">
+                <div class="card-body">
+                    <h5 class="card-title">Günstig und Professionell</h5>
+                    <p class="card-text">  Unser qualifiziertes Team sorgt für eine gründliche und effiziente Durchführung, egal ob es sich um Wohnungen, Häuser, Büros oder Keller handelt. Nehmen Sie heute noch Kontakt auf und holen Sie ein unverbindliches Angebot ein.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="bild2.webp" class="card-img-top" alt="Bild 2">
+                <div class="card-body">
+                    <h5 class="card-title">Kurzfristige Terminvergabe</h5>
+                    <p class="card-text">Selbstverständlich bieten wir auch kurzfristige Terminvergaben an! Wir verstehen, dass eine schnelle Entrümpelung manchmal dringend erforderlich ist. Unser flexibles Team ist darauf vorbereitet, umgehend zu handeln und den Termin entsprechend deinen Bedürfnissen einzuplanen.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+            <div class="card">
+                <img src="bild3.webp" class="card-img-top" alt="Bild 3">
+                <div class="card-body">
+                    <h5 class="card-title">Service, Preise und Kundenzufriedenheit</h5>
+                    <p class="card-text">Unser Ziel ist es, unseren Kunden den bestmöglichen Service zu bieten und gleichzeitig faire Preise zu gewährleisten. Sollten Sie ein vergleichbares Angebot zu einem günstigeren Preis finden, lassen Sie uns wissen und wir werden unser Bestes tun, um Ihnen ein noch besseres Angebot zu machen.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Über uns Card -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Über Uns</h5>
+                    <!-- Hier wird der Text dynamisch durch Typed.js erstellt -->
+                    <p class="card-text" id="about-us-text"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Anfrageformular -->
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Anfrageformular</h5>
+                    <form action="mailto:deine@email.de" method="post">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefon">Telefonnummer:</label>
+                            <input type="tel" class="form-control" id="telefon" name="telefon" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Adresse:</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="betreff">Betreff:</label>
+                            <input type="text" class="form-control" id="betreff" name="betreff" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Anfrage senden</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2023 Entrümpelung Billig - All Rights Reserved.</p>
+</footer>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Typed.js Konfiguration -->
+<script>
+    var typed = new Typed('#about-us-text', {
+        strings: [
+            "Herzlich willkommen bei Entrümpelung-Billig, Ihrem vertrauenswürdigen Partner für professionelle und kostengünstige Entrümpelungsdienstleistungen.",
+            "Mit einer langjährigen Erfahrung im Bereich der Entrümpelung stehen wir für Qualität, Zuverlässigkeit und Engagement. Unser qualifiziertes Team setzt sich mit Leidenschaft dafür ein, Ihren Raum schnell, gründlich und effizient zu entrümpeln, sei es eine Wohnung, ein Haus, ein Büro oder ein Keller.",
+            "Wir verstehen, dass eine Entrümpelung oft mit besonderen Anforderungen und Emotionen verbunden ist. Daher bieten wir nicht nur professionelle Dienstleistungen, sondern auch eine einfühlsame und kundenorientierte Herangehensweise.",
+            "Unser Unternehmen legt großen Wert auf Kundenzufriedenheit. Wir sind stolz darauf, unseren Kunden nicht nur einen erstklassigen Service, sondern auch transparente und faire Preise zu bieten.",
+            "Ihre Zufriedenheit steht für uns an erster Stelle, und wir sind erst dann zufrieden, wenn Sie es sind. Wir bieten auch flexible Terminvergaben an, um sicherzustellen, dass Ihre Entrümpelung genau nach Ihren Zeitplänen durchgeführt wird.",
+            "Bei Entrümpelung-Billig sind Sie in guten Händen – wir kümmern uns um Ihren Raum, als wäre er unserer."
+        ],
+        typeSpeed: 30, // Geschwindigkeit des Schreibeffekts in Millisekunden
+        backSpeed: 20, // Geschwindigkeit des Löschens in Millisekunden
+        backDelay: 2000, // Pause zwischen dem Löschen und dem erneuten Schreiben
+        showCursor: false, // Zeige den Schreibcursor nicht an
+        loop: false // Keine Endlosschleife
+    });
+</script>
+</body>
+</html>
